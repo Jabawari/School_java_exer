@@ -1,0 +1,841 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ */
+package com.mycompany.cal;
+import java.text.*;
+/**
+ *
+ * @author lifea
+ */
+public class kalkal extends javax.swing.JFrame {
+
+    /**
+     * Creates new form kalkal
+     */
+    double num,num2,result;
+    int thinking;
+    //DecimalFormat df = new DecimalFormat("#.######");
+
+      
+    public kalkal() {
+        initComponents();
+    }
+    
+    public void rators(){
+        
+        switch(thinking){
+            
+            case 1://add
+               result = num + Double.parseDouble(jTextField1.getText());
+               jTextField1.setText(Double.toString(result));
+               break;
+               
+            case 2://sub
+               result = num - Double.parseDouble(jTextField1.getText());
+               jTextField1.setText(Double.toString(result));
+               break;
+               
+            case 3://mul
+               result = num * Double.parseDouble(jTextField1.getText());
+               jTextField1.setText(Double.toString(result));
+               break;
+               
+            case 4://div
+               result = num / Double.parseDouble(jTextField1.getText());
+               jTextField1.setText(Double.toString(result));
+               break;
+               
+            case 5://mod
+               result = num % Double.parseDouble(jTextField1.getText());
+               jTextField1.setText(Double.toString(result));
+               break;
+               
+            case 6://== equalto
+                if(num ==Double.parseDouble(jTextField1.getText())){
+                    jTextField1.setText("true");
+                }
+                else{
+                    jTextField1.setText("false");
+                }              
+                break;
+                
+            case 7://!= not equal
+                if(num != Double.parseDouble(jTextField1.getText())){
+                    jTextField1.setText("true");
+                }
+                else{
+                    jTextField1.setText("false");
+                }        
+                break;
+                
+            case 8://< less than
+                if(num < Double.parseDouble(jTextField1.getText())){
+                    jTextField1.setText("true");
+                }
+                else{
+                    jTextField1.setText("false");
+                }
+                break;
+                
+            case 9: //> greater than
+                if(num > Double.parseDouble(jTextField1.getText())){
+                    jTextField1.setText("true");
+                }
+                else{
+                    jTextField1.setText("false");
+                }
+                break;
+                
+            case 10://<= less than or equal
+                if(num<= Double.parseDouble(jTextField1.getText())){
+                    jTextField1.setText("true");
+                }
+                else{
+                    jTextField1.setText("false");
+                }
+                break;
+                
+            case 11://>=greater or equal
+                if(num >= Double.parseDouble(jTextField1.getText())){
+                    jTextField1.setText("true");
+                }
+                else{
+                    jTextField1.setText("false");
+                }
+                break;
+                
+            case 12://++
+                result = num++;
+                jTextField1.setText(Double.toString(result));
+                break;
+            case 13://--
+                result = num--;
+                jTextField1.setText(Double.toString(result));
+                
+            case 14://+=
+                result = num += Double.parseDouble(jTextField1.getText());
+                jTextField1.setText(Double.toString(result));
+                break;
+                
+            case 15://-=    
+                result = num -= Double.parseDouble(jTextField1.getText());
+                jTextField1.setText(Double.toString(result));
+                break;
+                
+            case 16://*=
+                result = num *= Double.parseDouble(jTextField1.getText());
+                jTextField1.setText(Double.toString(result));
+                break;
+                
+            case 17:///=
+                result = num /= Double.parseDouble(jTextField1.getText());
+                jTextField1.setText(Double.toString(result));
+                break;
+                
+            case 18://%=
+                result = num %= Double.parseDouble(jTextField1.getText());
+                jTextField1.setText(Double.toString(result));
+                break;
+            
+        }
+    }
+
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
+        jButton12 = new javax.swing.JButton();
+        jButton13 = new javax.swing.JButton();
+        jButton14 = new javax.swing.JButton();
+        jButton15 = new javax.swing.JButton();
+        jButton16 = new javax.swing.JButton();
+        jButton17 = new javax.swing.JButton();
+        jButton18 = new javax.swing.JButton();
+        jButton19 = new javax.swing.JButton();
+        jButton20 = new javax.swing.JButton();
+        jButton21 = new javax.swing.JButton();
+        jButton22 = new javax.swing.JButton();
+        jButton23 = new javax.swing.JButton();
+        jButton24 = new javax.swing.JButton();
+        jButton25 = new javax.swing.JButton();
+        jButton26 = new javax.swing.JButton();
+        jButton27 = new javax.swing.JButton();
+        jButton28 = new javax.swing.JButton();
+        jButton29 = new javax.swing.JButton();
+        jButton30 = new javax.swing.JButton();
+        jButton31 = new javax.swing.JButton();
+        jButton32 = new javax.swing.JButton();
+        jButton33 = new javax.swing.JButton();
+        jButton34 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jButton35 = new javax.swing.JButton();
+        jButton36 = new javax.swing.JButton();
+
+        jLabel2.setText("jLabel2");
+
+        jLabel3.setText("jLabel3");
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Kalkyu");
+        setLocation(new java.awt.Point(250, 500));
+        getContentPane().setLayout(null);
+
+        jTextField1.setEditable(false);
+        jTextField1.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
+        jTextField1.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        jTextField1.setToolTipText("");
+        jTextField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField1);
+        jTextField1.setBounds(6, 41, 509, 49);
+
+        jButton1.setText("1");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1);
+        jButton1.setBounds(14, 102, 73, 46);
+
+        jButton2.setText("2");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton2);
+        jButton2.setBounds(93, 102, 73, 46);
+
+        jButton3.setText("3");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton3);
+        jButton3.setBounds(172, 102, 73, 46);
+
+        jButton4.setText("4");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton4);
+        jButton4.setBounds(14, 154, 73, 45);
+
+        jButton5.setText("5");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton5);
+        jButton5.setBounds(93, 154, 73, 45);
+
+        jButton6.setText("6");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton6);
+        jButton6.setBounds(172, 154, 74, 45);
+
+        jButton7.setText("7");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton7);
+        jButton7.setBounds(14, 205, 73, 43);
+
+        jButton8.setText("8");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton8);
+        jButton8.setBounds(93, 205, 73, 43);
+
+        jButton9.setText("9");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton9);
+        jButton9.setBounds(172, 205, 77, 43);
+
+        jButton10.setText("+");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton10);
+        jButton10.setBounds(251, 102, 80, 46);
+
+        jButton11.setText("-");
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton11);
+        jButton11.setBounds(337, 102, 80, 46);
+
+        jButton12.setText("*");
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton12);
+        jButton12.setBounds(252, 154, 80, 45);
+
+        jButton13.setText("/");
+        jButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton13ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton13);
+        jButton13.setBounds(338, 154, 80, 45);
+
+        jButton14.setText("%");
+        jButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton14ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton14);
+        jButton14.setBounds(256, 205, 80, 43);
+
+        jButton15.setText("==");
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton15);
+        jButton15.setBounds(342, 205, 79, 43);
+
+        jButton16.setText("0");
+        jButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton16ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton16);
+        jButton16.setBounds(14, 254, 73, 44);
+
+        jButton17.setText(".");
+        jButton17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton17ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton17);
+        jButton17.setBounds(93, 254, 73, 44);
+
+        jButton18.setText("!");
+        jButton18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton18ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton18);
+        jButton18.setBounds(172, 254, 75, 44);
+
+        jButton19.setText("<");
+        jButton19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton19ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton19);
+        jButton19.setBounds(338, 254, 80, 44);
+
+        jButton20.setText(">");
+        jButton20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton20ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton20);
+        jButton20.setBounds(427, 254, 83, 44);
+
+        jButton21.setText("=");
+        jButton21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton21ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton21);
+        jButton21.setBounds(14, 304, 73, 43);
+
+        jButton22.setText("||");
+        jButton22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton22ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton22);
+        jButton22.setBounds(253, 304, 79, 43);
+
+        jButton23.setText("&&");
+        jButton23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton23ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton23);
+        jButton23.setBounds(253, 254, 79, 44);
+
+        jButton24.setText("<=");
+        jButton24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton24ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton24);
+        jButton24.setBounds(338, 304, 80, 43);
+
+        jButton25.setText(">=");
+        jButton25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton25ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton25);
+        jButton25.setBounds(427, 304, 83, 43);
+
+        jButton26.setText("++");
+        jButton26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton26ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton26);
+        jButton26.setBounds(423, 102, 83, 46);
+
+        jButton27.setText("--");
+        jButton27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton27ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton27);
+        jButton27.setBounds(427, 154, 79, 42);
+
+        jButton28.setText("*=");
+        jButton28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton28ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton28);
+        jButton28.setBounds(14, 353, 73, 43);
+
+        jButton29.setText("/=");
+        jButton29.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton29ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton29);
+        jButton29.setBounds(93, 353, 73, 43);
+
+        jButton30.setText("!=");
+        jButton30.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton30ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton30);
+        jButton30.setBounds(427, 205, 83, 43);
+
+        jButton31.setText("%=");
+        jButton31.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton31ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton31);
+        jButton31.setBounds(172, 360, 75, 28);
+
+        jButton32.setText("CLR");
+        jButton32.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton32ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton32);
+        jButton32.setBounds(14, 402, 152, 45);
+
+        jButton33.setText("=");
+        jButton33.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton33ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton33);
+        jButton33.setBounds(297, 402, 213, 45);
+
+        jButton34.setText("DEL");
+        jButton34.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton34ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton34);
+        jButton34.setBounds(172, 402, 119, 45);
+
+        jLabel1.setForeground(new java.awt.Color(255, 204, 255));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel1.setToolTipText("");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(432, 17, 83, 0);
+
+        jButton35.setText("+=");
+        jButton35.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton35ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton35);
+        jButton35.setBounds(93, 304, 73, 43);
+
+        jButton36.setText("-=");
+        jButton36.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton36ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton36);
+        jButton36.setBounds(172, 304, 75, 43);
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        jTextField1.setText(jTextField1.getText()+"1");
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        jTextField1.setText(jTextField1.getText()+"2");
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        num = Double.parseDouble(jTextField1.getText());
+        thinking = 1;
+        jTextField1.setText("");
+        jLabel1.setText(num+"+");
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        jTextField1.setText(jTextField1.getText()+"4");
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        jTextField1.setText(jTextField1.getText()+"6");
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        jTextField1.setText(jTextField1.getText()+"9");
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        num = Double.parseDouble(jTextField1.getText());
+        thinking = 3;
+        jTextField1.setText("");
+        jLabel1.setText(num+"*");
+    }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+        num = Double.parseDouble(jTextField1.getText());
+        thinking = 6;
+        jTextField1.setText("");
+        jLabel1.setText(num+"==");
+    }//GEN-LAST:event_jButton15ActionPerformed
+
+    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
+        num = Double.parseDouble(jTextField1.getText());
+        thinking = 9;
+        jTextField1.setText("");
+        jLabel1.setText(num+">");
+    }//GEN-LAST:event_jButton20ActionPerformed
+
+    private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
+        num = Double.parseDouble(jTextField1.getText());
+        thinking = 18;
+        jTextField1.setText("");
+        jLabel1.setText(num+"%=");
+    }//GEN-LAST:event_jButton31ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+       jTextField1.setText(jTextField1.getText()+"3");
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        jTextField1.setText(jTextField1.getText()+"5");
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        jTextField1.setText(jTextField1.getText()+"7");
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        jTextField1.setText(jTextField1.getText()+"8");
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+        jTextField1.setText(jTextField1.getText()+"0");
+    }//GEN-LAST:event_jButton16ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+         num = Double.parseDouble(jTextField1.getText());
+        thinking = 2;
+        jTextField1.setText("");
+        jLabel1.setText(num+"-");
+        
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+         num = Double.parseDouble(jTextField1.getText());
+        thinking = 4;
+        jTextField1.setText("");
+        jLabel1.setText(num+"/");
+    }//GEN-LAST:event_jButton13ActionPerformed
+
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+         num = Double.parseDouble(jTextField1.getText());
+        thinking = 5;
+        jTextField1.setText("");
+        jLabel1.setText(num+"%");
+    }//GEN-LAST:event_jButton14ActionPerformed
+
+    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+        jTextField1.setText(jTextField1.getText()+".");
+    }//GEN-LAST:event_jButton17ActionPerformed
+
+    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+        jTextField1.setText(jTextField1.getText()+"!");
+    }//GEN-LAST:event_jButton18ActionPerformed
+
+    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+        num = Double.parseDouble(jTextField1.getText());
+        thinking = 8;
+        jTextField1.setText("");
+        jLabel1.setText(num+"<");
+    }//GEN-LAST:event_jButton19ActionPerformed
+
+    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
+        jTextField1.setText(jTextField1.getText()+"=");
+    }//GEN-LAST:event_jButton21ActionPerformed
+
+    private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
+        jTextField1.setText(jTextField1.getText()+"||");
+    }//GEN-LAST:event_jButton22ActionPerformed
+
+    private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
+        jTextField1.setText(jTextField1.getText()+"&&");
+    }//GEN-LAST:event_jButton23ActionPerformed
+
+    private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
+        num = Double.parseDouble(jTextField1.getText());
+        thinking = 10;
+        jTextField1.setText("");
+        jLabel1.setText(num+"<=");
+    }//GEN-LAST:event_jButton24ActionPerformed
+
+    private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
+         num = Double.parseDouble(jTextField1.getText());
+        thinking = 11;
+        jTextField1.setText("");
+        jLabel1.setText(num+">=");
+    }//GEN-LAST:event_jButton25ActionPerformed
+
+    private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
+        num = Double.parseDouble(jTextField1.getText());
+        thinking = 8;
+        jTextField1.setText("");
+        jLabel1.setText(num+"++");
+    }//GEN-LAST:event_jButton26ActionPerformed
+
+    private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
+         num = Double.parseDouble(jTextField1.getText());
+         thinking = 9;
+         jTextField1.setText("");
+         jLabel1.setText(num+ "--");
+    }//GEN-LAST:event_jButton27ActionPerformed
+
+    private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
+        num = Double.parseDouble(jTextField1.getText());
+        thinking = 16;
+        jTextField1.setText("");
+        jLabel1.setText(num+"*=");
+        
+    }//GEN-LAST:event_jButton28ActionPerformed
+
+    private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
+        num = Double.parseDouble(jTextField1.getText());
+        thinking = 17;
+        jTextField1.setText("");
+        jLabel1.setText(num+"/=");
+    }//GEN-LAST:event_jButton29ActionPerformed
+
+    private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
+        num = Double.parseDouble(jTextField1.getText());
+        thinking = 7;
+        jTextField1.setText("");
+        jLabel1.setText(num+"!=");
+    }//GEN-LAST:event_jButton30ActionPerformed
+
+    private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
+        jTextField1.setText("");
+    }//GEN-LAST:event_jButton32ActionPerformed
+
+    private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
+        int L = jTextField1.getText().length();
+        int nummy = jTextField1.getText().length()-1;
+        String stow;
+        
+        if(L > 0){
+            StringBuilder del = new StringBuilder(jTextField1.getText());
+            del.deleteCharAt(nummy);
+            stow = del.toString();
+            jTextField1.setText(stow);
+            
+        }
+        
+    }//GEN-LAST:event_jButton34ActionPerformed
+
+    private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
+        rators();
+    }//GEN-LAST:event_jButton33ActionPerformed
+
+    private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
+        num = Double.parseDouble(jTextField1.getText());
+        thinking = 14;
+        jTextField1.setText("");
+        jLabel1.setText(num+"+=");
+    }//GEN-LAST:event_jButton35ActionPerformed
+
+    private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
+        num = Double.parseDouble(jTextField1.getText());
+        thinking = 15;
+        jTextField1.setText("");
+        jLabel1.setText(num+"-=");
+    }//GEN-LAST:event_jButton36ActionPerformed
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(kalkal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(kalkal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(kalkal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(kalkal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new kalkal().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton13;
+    private javax.swing.JButton jButton14;
+    private javax.swing.JButton jButton15;
+    private javax.swing.JButton jButton16;
+    private javax.swing.JButton jButton17;
+    private javax.swing.JButton jButton18;
+    private javax.swing.JButton jButton19;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton20;
+    private javax.swing.JButton jButton21;
+    private javax.swing.JButton jButton22;
+    private javax.swing.JButton jButton23;
+    private javax.swing.JButton jButton24;
+    private javax.swing.JButton jButton25;
+    private javax.swing.JButton jButton26;
+    private javax.swing.JButton jButton27;
+    private javax.swing.JButton jButton28;
+    private javax.swing.JButton jButton29;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton30;
+    private javax.swing.JButton jButton31;
+    private javax.swing.JButton jButton32;
+    private javax.swing.JButton jButton33;
+    private javax.swing.JButton jButton34;
+    private javax.swing.JButton jButton35;
+    private javax.swing.JButton jButton36;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JTextField jTextField1;
+    // End of variables declaration//GEN-END:variables
+}
